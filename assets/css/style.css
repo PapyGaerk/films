@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "UniSansBold";
+  src: url("../fonts/UniSansBold.otf") format("otf"), url("../fonts/UniSansBold.woff") format("woff"), url("../fonts/UniSansBold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "UniSansLight";
+  src: url("../fonts/UniSansLight.otf") format("otf"), url("../fonts/UniSansLight.woff") format("woff"), url("../fonts/UniSansLight.ttf") format("ttf");
+}
+@font-face {
+  font-family: "UniSansRegular";
+  src: url("../fonts/UniSansRegular.otf") format("otf"), url("../fonts/UniSansRegular.woff") format("woff"), url("../fonts/UniSansRegular.ttf") format("ttf");
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: "UniSansRegular", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardisée */
+}
+nav {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  height: 10vh;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li .loupe {
+  position: relative;
+}
+nav ul li .loupe:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25px;
+  width: 30px;
+  background: url(../img/icons/loupe.png) no-repeat;
+  -webkit-background-size: cover;
+  background-size: 80%;
+  margin: 5px;
+  cursor: pointer;
+}
+nav ul li .loupe input {
+  position: relative;
+  background: transparent;
+  border: 1.5px solid #93649e;
+  border-radius: 40px;
+  height: 35px;
+  padding: 0 10px;
+  color: #FFFFFF;
+}
+nav ul li .loupe input:focus {
+  outline: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav ul:nth-child(1) {
+  width: 25%;
+  padding-left: 100px;
+}
+nav ul:nth-child(2) {
+  width: 50%;
+  justify-content: space-around;
+}
+nav ul:nth-child(3) {
+  width: 25%;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+.container {
+  width: 80vw;
+  height: calc(90vh);
+  display: flex;
+  margin: auto;
+}
+.container .monde {
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .monde div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .monde div img {
+  width: 500px;
+}
+.container .monde div .connexion_desc {
+  color: #FFF;
+  font-family: "UniSansRegular", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  width: 90%;
+  margin-top: 20px;
+  line-height: 25px;
+}
+.container .connexion_card {
+  width: 40vw;
+  display: flex;
+}
+.container .connexion_card div {
+  width: 70%;
+  height: 80%;
+  background: rgba(147, 100, 158, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.container .connexion_card div h1 {
+  font-family: "UniSansRegular", sans-serif;
+  color: #FFFFFF;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
